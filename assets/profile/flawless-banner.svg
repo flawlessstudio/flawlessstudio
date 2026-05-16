@@ -1,0 +1,27 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Flawless Studio profile banner</title>
+  <desc id="desc">A dark geometric banner for Flawless Studio, focused on AI systems, design operations, and quality frameworks.</desc>
+  <rect width="1200" height="360" rx="32" fill="#171614"/>
+  <rect x="1" y="1" width="1198" height="358" rx="31" stroke="#393836" stroke-width="2"/>
+  <circle cx="990" cy="70" r="230" fill="#01696F" opacity="0.22"/>
+  <circle cx="1060" cy="300" r="280" fill="#4F98A3" opacity="0.12"/>
+  <path d="M0 284C138 244 254 246 392 278C548 314 688 324 842 276C1004 225 1102 218 1200 248V360H0V284Z" fill="#201F1D"/>
+  <path d="M774 78H1030L1124 172L1030 266H774L680 172L774 78Z" stroke="#4F98A3" stroke-width="2" opacity="0.7"/>
+  <path d="M824 118H1012L1066 172L1012 226H824L770 172L824 118Z" stroke="#CDCCCA" stroke-width="1.5" opacity="0.18"/>
+  <path d="M874 151H984L1005 172L984 193H874L853 172L874 151Z" fill="#4F98A3" opacity="0.18" stroke="#4F98A3" stroke-width="1"/>
+  <circle cx="770" cy="172" r="5" fill="#4F98A3"/>
+  <circle cx="1066" cy="172" r="5" fill="#4F98A3"/>
+  <circle cx="929" cy="151" r="4" fill="#CDCCCA" opacity="0.9"/>
+  <circle cx="929" cy="193" r="4" fill="#CDCCCA" opacity="0.9"/>
+  <path d="M770 172H853M1005 172H1066M929 151V118M929 193V226" stroke="#4F98A3" stroke-width="1.5" opacity="0.65"/>
+  <text x="72" y="122" fill="#CDCCCA" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">Flawless Studio</text>
+  <text x="76" y="164" fill="#797876" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="500">AI systems · Design operations · Quality frameworks</text>
+  <rect x="76" y="205" width="118" height="34" rx="17" fill="#01696F"/>
+  <text x="99" y="227" fill="#F7F6F2" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700">INUI OS</text>
+  <rect x="210" y="205" width="126" height="34" rx="17" fill="#201F1D" stroke="#393836"/>
+  <text x="233" y="227" fill="#CDCCCA" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700">FDIS OS</text>
+  <rect x="352" y="205" width="170" height="34" rx="17" fill="#201F1D" stroke="#393836"/>
+  <text x="376" y="227" fill="#CDCCCA" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700">Flawless Engine</text>
+  <rect x="76" y="268" width="490" height="1" fill="#393836"/>
+  <text x="76" y="302" fill="#BAB9B4" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Barcelona · solo founder · industrial designer · software and AI</text>
+</svg>
