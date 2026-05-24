@@ -20,7 +20,7 @@
 | **Registry** | Active state of tools/stacks | `registries/voice-ai/` |
 | **Ecosystem** | Map of all repos and their relationships | `ecosystem/map.md` |
 | **Docs** | Operational knowledge, decisions, runbooks | `docs/` |
-| **Agents** | Automated systems operating under contracts | `docs/reference/agent-contracts.md` |
+| **Agents** | Automated systems operating under contracts | `docs/reference/` *(contracts added when formalized)* |
 
 ## Quality Bar
 
