@@ -1,0 +1,49 @@
+name: Canon revision request
+description: Propose a change to a document in canon/
+labels: ["canon", "governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Canon documents are immutable once accepted. A revision requires formal justification.
+        Read `GOVERNANCE.md` before submitting.
+  - type: input
+    id: document
+    attributes:
+      label: Canon document
+      description: Which canon document do you propose to revise?
+      placeholder: "e.g. canon/flawless-writing.md"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current state
+      description: What does the document currently say (quote the relevant section)?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed change
+      description: What should it say instead?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change necessary? What gap or error does it address?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have read GOVERNANCE.md
+          required: true
+        - label: The proposed change applies to both EN and ES versions
+          required: true
+        - label: This is not a preference — it corrects an error or closes a real gap
+          required: true

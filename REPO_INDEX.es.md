@@ -1,6 +1,7 @@
-# ÍNDICE DE REPOSITORIOS
+# Índice de repositorios
 
-> Índice maestro de todos los repositorios activos de Flawless Studio. Fuente de verdad para la navegación del ecosistema.
+> Índice de consulta rápida de todos los repositorios activos de Flawless Studio.
+> Para detalle completo, descripciones y relaciones — ver [`ecosystem/repo-index.es.md`](./ecosystem/repo-index.es.md).
 
 ## Sistemas Apex
 
@@ -34,6 +35,6 @@
 
 ---
 
-_Ver también: [`ecosystem/map.es.md`](./ecosystem/map.es.md) para el mapa de relaciones visual._
+_Detalle completo: [`ecosystem/repo-index.es.md`](./ecosystem/repo-index.es.md) · Mapa visual: [`ecosystem/map.es.md`](./ecosystem/map.es.md)_
 
 _Última revisión: Mayo 2026_

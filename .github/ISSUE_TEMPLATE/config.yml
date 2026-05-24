@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & Discussions
+    url: https://github.com/flawlessstudio/flawlessstudio/discussions
+    about: Ask questions or discuss ideas before opening an issue.
+  - name: Security vulnerability
+    url: https://github.com/flawlessstudio/flawlessstudio/blob/main/SECURITY.md
+    about: Read the security policy before reporting a vulnerability.

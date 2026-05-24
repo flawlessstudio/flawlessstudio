@@ -1,0 +1,39 @@
+name: Bug report
+description: Report an error or inconsistency in documentation or standards
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report errors, broken links, inconsistencies, or incorrect information.
+  - type: input
+    id: location
+    attributes:
+      label: File or location
+      description: Which file or section contains the issue?
+      placeholder: "e.g. canon/flawless-writing.md, Section: Exit criteria"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong?
+      description: Describe the error clearly and specifically.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it say or do?
+      description: Describe the correct state.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have checked that this is not already reported
+          required: true
+        - label: I have checked both EN and ES versions if applicable
+          required: false

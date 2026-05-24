@@ -1,6 +1,7 @@
-# REPO INDEX
+# Repo Index
 
-> Master index of all active Flawless Studio repositories. Source of truth for ecosystem navigation.
+> Quick-reference index of all active Flawless Studio repositories.
+> For full detail, descriptions, and relationships — see [`ecosystem/repo-index.md`](./ecosystem/repo-index.md).
 
 ## Apex Systems
 
@@ -34,6 +35,6 @@
 
 ---
 
-_See also: [`ecosystem/map.md`](./ecosystem/map.md) for visual relationship map._
+_Full detail: [`ecosystem/repo-index.md`](./ecosystem/repo-index.md) · Visual map: [`ecosystem/map.md`](./ecosystem/map.md)_
 
 _Last reviewed: May 2026_

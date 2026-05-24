@@ -1,0 +1,40 @@
+name: Improvement suggestion
+description: Suggest a structural or content improvement that does not affect canon
+labels: ["improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for suggestions that improve clarity, structure, or coverage
+        without modifying canon documents.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you improve?
+      description: Describe the improvement clearly and specifically.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why does it matter?
+      description: What gap or friction does this address?
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Scope
+      description: Which files, directories, or sections are affected?
+      placeholder: "e.g. docs/how-to/, README.md"
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: This does not require a canon revision
+          required: true
+        - label: I have checked this is not already covered or in progress
+          required: true
