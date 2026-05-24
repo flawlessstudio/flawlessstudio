@@ -1,0 +1,59 @@
+name: Audit Reminder
+
+on:
+  schedule:
+    # First day of every month at 09:00 UTC
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual audit trigger'
+
+jobs:
+  create-audit-issue:
+    name: Create audit reminder issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create audit reminder
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().split('T')[0];
+            const reason = context.eventName === 'workflow_dispatch'
+              ? context.payload.inputs.reason
+              : 'Scheduled monthly reminder';
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Audit] Canonical tree review — ${today}`,
+              body: [
+                '## Scheduled audit reminder',
+                '',
+                `**Date:** ${today}`,
+                `**Trigger:** ${reason}`,
+                '',
+                '## Checklist',
+                '',
+                '- [ ] All canon documents reviewed for accuracy',
+                '- [ ] Bilingual parity verified across all required files',
+                '- [ ] `ecosystem/map.md` reflects current repo count and status',
+                '- [ ] `ecosystem/repo-index.md` synced with map',
+                '- [ ] `registries/voice-ai/registry.core.yaml` entries still valid',
+                '- [ ] `registries/voice-ai/registry.watchlist.yaml` promotions reviewed',
+                '- [ ] `CHANGELOG.md` up to date',
+                '- [ ] `docs/decisions/README.md` index reflects all ADRs',
+                '- [ ] No broken links in root canonical files',
+                '',
+                '## Output',
+                '',
+                `Add audit report to \`docs/audits/${today}-canonical-tree-audit.md\``,
+                '',
+                '*Triggered by `.github/workflows/audit-report.yml`*'
+              ].join('\n'),
+              labels: ['audit']
+            });
