@@ -1,0 +1,24 @@
+# Voice AI — Core Registry
+# Active tools in production use at Flawless Studio
+# Last reviewed: May 2026
+
+tools:
+  - id: elevenlabs
+    name: ElevenLabs
+    role: primary-tts
+    status: active
+    version: v2
+    notes: Used for Flawless Engine voice output
+
+  - id: whisper
+    name: OpenAI Whisper
+    role: stt
+    status: active
+    version: large-v3
+    notes: Local and API transcription
+
+  - id: cartesia
+    name: Cartesia
+    role: realtime-tts
+    status: evaluating
+    notes: Low-latency alternative to ElevenLabs

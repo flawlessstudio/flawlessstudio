@@ -1,0 +1,22 @@
+# Voice AI — Watchlist Registry
+# Tools under evaluation — not yet in production
+# Last reviewed: May 2026
+
+watchlist:
+  - id: hume-ai
+    name: Hume AI
+    category: emotional-voice
+    reason: Expressive voice with emotional intelligence layer
+    priority: medium
+
+  - id: suno
+    name: Suno
+    category: music-gen
+    reason: Audio branding and ambient design
+    priority: low
+
+  - id: resemble-ai
+    name: Resemble AI
+    category: voice-cloning
+    reason: Custom voice identity for Flawless Engine
+    priority: high
