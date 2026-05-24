@@ -1,6 +1,6 @@
 # Flawless Studio — Ecosystem Map
 
-> Last updated: 2026-05-24  
+> Last updated: 2026-05-24
 > Repos: 33 active | Tier classification: APEX / System / Tool / Experiment / Reference
 
 ---
@@ -72,7 +72,6 @@ Repos that build the studio's core systems and design language.
 | [`Obi-Agent`](https://github.com/flawlessstudio/Obi-Agent) | AI agent prototype — time saver | Private |
 | [`Obi-whatsaap`](https://github.com/flawlessstudio/Obi-whatsaap) | WhatsApp AI experiment | Private |
 | [`Pre-Gravity`](https://github.com/flawlessstudio/Pre-Gravity) | Tools, code, and guides library | Private |
-| [`RAG-Anything`](https://github.com/flawlessstudio/RAG-Anything) | RAG experiments | Private |
 
 ---
 
@@ -86,10 +85,10 @@ Repos that build the studio's core systems and design language.
 
 ## Canonical standards applied
 
-All APEX and Agent Layer repos follow the **Flawless canonical bilingual tree**:  
-- `filename.md` (EN) · `filename.es.md` (ES)  
-- Diataxis docs structure  
-- ADRs in `docs/decisions/`  
+All APEX and Agent Layer repos follow the **Flawless canonical bilingual tree**:
+- `filename.md` (EN) · `filename.es.md` (ES)
+- Diataxis docs structure
+- ADRs in `docs/decisions/`
 - `CODEOWNERS` + `CONTRIBUTING.md` in `.github/`
 
-*See [ADR-001](../docs/decisions/2026-05-24-canonical-bilingual-tree.md) for the full structural decision.*
+*See [ADR-0001](../docs/decisions/ADR-0001-canonical-structure.md) for the full structural decision.*

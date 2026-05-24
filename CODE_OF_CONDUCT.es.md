@@ -15,7 +15,6 @@ Todos los colaboradores, mantenedores y participantes deben:
 
 - Ataques personales o acoso de cualquier tipo
 - Feedback deliberadamente vago o inútil
-- Enviar trabajo sin autorrevisión previa
 - Ignorar el canon establecido sin justificación formal
 
 ## Aplicación

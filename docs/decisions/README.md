@@ -4,13 +4,19 @@
 
 Each file documents a single decision: the context, the options considered, the choice made, and the rationale. ADRs are immutable once accepted — superseded decisions are marked as such, never deleted.
 
+## Index
+
+| ADR | Title | Status | Date |
+|---|---|---|---|
+| [ADR-0001](./ADR-0001-canonical-structure.md) | Canonical Repository Structure | Accepted | 2026-05-01 |
+
 ## Naming convention
 
 ```
 ADR-NNNN-<slug>.md
 ```
 
-Example: `ADR-0001-canonical-structure.md`
+Example: `ADR-0002-registry-schema.md`
 
 ## Status values
 

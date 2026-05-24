@@ -28,4 +28,6 @@ This project is maintained by one person. Responses are best-effort, typically w
 
 ---
 
+If you have identified the right channel for your case, this document has done its job.
+
 *See also [`CONTRIBUTING.md`](./.github/CONTRIBUTING.md) and [`GOVERNANCE.md`](./GOVERNANCE.md).*

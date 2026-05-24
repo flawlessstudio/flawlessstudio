@@ -1,20 +1,24 @@
 # CANON
 
-> La única fuente de verdad del sistema Flawless. Todos los marcos, terminología y métodos que definen cómo Flawless Studio piensa, construye y opera.
+> La fuente de verdad única del sistema Flawless. Todos los marcos, terminología y métodos que definen cómo Flawless Studio piensa, construye y opera.
 
 ## Contenido
 
-| Documento | Propósito |
-|---|---|
-| [`canon/flawless-framework.es.md`](./canon/flawless-framework.es.md) | El marco operativo central de Flawless |
-| [`canon/flawless-terminology.es.md`](./canon/flawless-terminology.es.md) | Glosario canónico de todos los términos Flawless |
-| [`canon/flawless-method.es.md`](./canon/flawless-method.es.md) | El método Flawless: cómo se toman las decisiones |
-| [`canon/flawless-writing.es.md`](./canon/flawless-writing.es.md) | El estándar de escritura Flawless: dimensiones, criterios de salida, tono por tipo de archivo |
+| Documento | Propósito | Estado |
+|---|---|---|
+| [`canon/flawless-framework.md`](./canon/flawless-framework.md) | El marco operativo Flawless central | Aceptado |
+| [`canon/flawless-terminology.md`](./canon/flawless-terminology.md) | Glosario canónico de todos los términos Flawless | Aceptado |
+| [`canon/flawless-method.md`](./canon/flawless-method.md) | El método Flawless: cómo se toman las decisiones | Aceptado |
+| [`canon/flawless-writing.md`](./canon/flawless-writing.md) | Estándar de escritura: dimensiones, criterios de salida, tono por tipo de archivo | Aceptado |
 
 ## Principio
 
-Todo lo que esté en `canon/` se considera inmutable hasta que una revisión formal sea aprobada vía `GOVERNANCE.md`. Los documentos canónicos son la referencia de mayor prioridad ante cualquier conflicto.
+Todo lo que está en `canon/` se considera inmutable hasta que una revisión formal sea aprobada mediante [`GOVERNANCE.md`](./GOVERNANCE.es.md). Los documentos canónicos son la referencia de mayor prioridad en cualquier conflicto.
+
+## Cómo usar este índice
+
+Lee el documento cuyo dominio aplica a tu tarea actual. Si no sabes cuál aplica, empieza por `flawless-method.md`.
 
 ---
 
-_Última revisión: Mayo 2026_
+_Última revisión: 2026-05-24_

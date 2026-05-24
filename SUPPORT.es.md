@@ -28,4 +28,6 @@ Este proyecto lo mantiene una sola persona. Las respuestas son de mejor esfuerzo
 
 ---
 
+Si has identificado el canal correcto para tu caso, este documento ha cumplido su función.
+
 *Ver también [`CONTRIBUTING.md`](./.github/CONTRIBUTING.md) y [`GOVERNANCE.md`](./GOVERNANCE.es.md).*

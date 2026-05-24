@@ -8,7 +8,7 @@
 |---|---|
 | **Founder** | Final decision authority on all canonical documents |
 | **Contributor** | Proposes changes via PR; no direct push to `main` |
-| **Agent** | Automated systems operating under strict contracts defined in `docs/reference/agent-contracts.md` |
+| **Agent** | Automated systems operating under strict contracts; contracts defined in `docs/reference/` when formalized |
 
 ## Change Process
 
@@ -19,7 +19,7 @@
 
 ## Branch Strategy
 
-- `main` — production-ready, protected
+- `main` — production-ready, protected. Direct pushes are blocked; all changes enter via PR.
 - `draft/*` — work in progress, unreviewed
 - `fix/*` — targeted corrections
 
@@ -31,4 +31,4 @@
 
 ---
 
-_Last reviewed: May 2026_
+_Last reviewed: 2026-05-24_

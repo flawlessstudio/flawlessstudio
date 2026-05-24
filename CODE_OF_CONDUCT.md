@@ -15,7 +15,6 @@ All contributors, maintainers, and participants are expected to:
 
 - Personal attacks or harassment of any kind
 - Deliberately vague or unhelpful feedback
-- Submitting work that has not been self-reviewed
 - Ignoring established canon without formal justification
 
 ## Enforcement
