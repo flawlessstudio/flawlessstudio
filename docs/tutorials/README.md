@@ -1,7 +1,16 @@
 # Tutorials
 
-> Learning-oriented guides. Designed to take someone from zero to a working outcome with a Flawless system.
+> Learning-oriented walkthroughs for the Flawless Studio ecosystem.
 
-Name convention: `YYYY-MM-{topic}.md`
+Tutorials guide a new contributor through a complete, meaningful task from start to finish. They prioritize understanding over efficiency and assume no prior knowledge of the system.
 
-_No tutorials yet. Add as new systems are onboarded._
+## Scope
+
+- Getting started with the Flawless ecosystem
+- Your first canon contribution
+- Understanding the registry structure end-to-end
+- How the bilingual parity system works
+
+---
+
+*For task-specific instructions, see [`docs/how-to/`](../how-to/).*

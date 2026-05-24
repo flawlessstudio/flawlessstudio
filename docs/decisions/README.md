@@ -1,13 +1,24 @@
 # Decisions
 
-> Architecture Decision Records (ADRs) and migration logs for Flawless Studio.
+> Architecture Decision Records (ADRs) for the Flawless Studio ecosystem.
 
-Name convention: `YYYY-MM-DD-{short-title}.md`
+Each file documents a single decision: the context, the options considered, the choice made, and the rationale. ADRs are immutable once accepted — superseded decisions are marked as such, never deleted.
 
-| File | Date | Summary |
-|---|---|---|
-| `MIGRATION_LOG.md` | 2026-05-24 | Bilingual tree scaffold |
+## Naming convention
+
+```
+ADR-NNNN-<slug>.md
+```
+
+Example: `ADR-0001-canonical-structure.md`
+
+## Status values
+
+- `proposed` — under discussion
+- `accepted` — in effect
+- `superseded-by: ADR-XXXX` — replaced by a newer decision
+- `rejected` — considered and declined
 
 ---
 
-_Every significant architectural decision must be recorded here._
+*Governed by [`GOVERNANCE.md`](../../GOVERNANCE.md).*

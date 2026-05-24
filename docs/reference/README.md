@@ -1,13 +1,17 @@
 # Reference
 
-> Information-oriented documentation. Specs, schemas, contracts, and catalogs.
+> Authoritative lookup material for the Flawless Studio ecosystem.
 
-| File | Purpose |
-|---|---|
-| `agent-contracts.md` | Formal contracts for all AI agents |
-| `AGENT.md` | Single-agent operating spec |
-| `AGENTS.md` | Multi-agent system spec |
-| `AI_AGENT_HANDOFF.md` | Agent handoff protocol |
-| `AI_AGENT_QUICKSTART.md` | Agent quickstart reference |
-| `Flawless-Skills-filelist.md` | Catalog of all Flawless skills |
-| `type_designer_agent_claude-filelist.md` | Type designer agent file manifest |
+Reference documents are optimized for scanning, not reading. They contain the facts needed to use the system correctly: schemas, field definitions, status values, naming conventions, and canonical lists.
+
+## Scope
+
+- Canon document field definitions
+- Registry schema reference
+- Naming conventions across the ecosystem
+- Status value definitions
+- Cross-repository link map
+
+---
+
+*For conceptual background, see [`docs/explanation/`](../explanation/).*

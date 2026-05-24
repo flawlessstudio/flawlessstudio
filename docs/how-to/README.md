@@ -1,7 +1,16 @@
-# How-To Guides
+# How-to Guides
 
-> Task-oriented instructions. Concrete steps to accomplish a specific goal within the Flawless ecosystem.
+> Task-oriented instructions for working within the Flawless Studio ecosystem.
 
-Name convention: `how-to-{task}.md`
+How-to guides answer *how do I accomplish X*. They assume the reader has context and wants to complete a specific task efficiently.
 
-_No how-to guides yet. Add as recurring operational tasks are identified._
+## Scope
+
+- How to add a new canon document
+- How to promote a registry entry from watchlist to core
+- How to open a canon revision via the governance process
+- How to contribute a new registry vertical
+
+---
+
+*See also [`docs/tutorials/`](../tutorials/) for learning-oriented walkthroughs.*

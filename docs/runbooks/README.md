@@ -1,14 +1,17 @@
 # Runbooks
 
-> Operational guides and AI knowledge documents for the Flawless ecosystem.
+> Step-by-step operational procedures for maintaining the Flawless Studio ecosystem.
 
-| File | Language | Topic |
-|---|---|---|
-| `El-Orquestador-de-Intenciones-Desarrollo-Nativo-de-IA-2026.es.md` | ES | Intent orchestrator, AI-native dev 2026 |
-| `Desarrollo-Web-Full-Stack-e-Infraestructura-de-Empresas-Autonomas-impulsadas-por-IA.es.md` | ES | Full-stack web dev + autonomous AI companies |
-| `Guia-completa-para-conseguir-Gemini-IA-Pro-GRATIS.es.md` | ES | Gemini AI Pro free access guide |
-| `Ingenieria-de-Contexto-para-IA-en-CLI.es.md` | ES | Context engineering for AI in CLI |
+Runbooks are written for the maintainer. They cover repeatable operational tasks that must be executed correctly and in order. Each runbook includes preconditions, steps, validation, and rollback if applicable.
+
+## Scope
+
+- Canon document revision process
+- Registry audit procedure
+- Repository health check
+- Bilingual parity verification
+- Ecosystem map update procedure
 
 ---
 
-_EN versions pending. Add as translations are completed._
+*For one-off task guidance, see [`docs/how-to/`](../how-to/).*

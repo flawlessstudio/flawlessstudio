@@ -1,7 +1,16 @@
 # Explanation
 
-> Understanding-oriented documentation. Conceptual background, rationale, and design philosophy behind Flawless systems.
+> Conceptual documentation that builds understanding of the Flawless system.
 
-Name convention: `{topic}-explained.md`
+Explanation documents answer *why* and *how things work* — not what to do. They provide the background needed to use canon documents, registries, and tooling effectively.
 
-_No explanation docs yet. Add as architectural decisions require context._
+## Scope
+
+- Design rationale behind canon documents
+- How the registry system is structured and why
+- Conceptual models behind Flawless quality standards
+- Ecosystem architecture and inter-repo relationships
+
+---
+
+*See also [`docs/how-to/`](../how-to/) for task-oriented guides.*
