@@ -9,6 +9,7 @@
 | [`canon/flawless-framework.md`](./canon/flawless-framework.md) | The core Flawless operating framework |
 | [`canon/flawless-terminology.md`](./canon/flawless-terminology.md) | Canonical glossary of all Flawless terms |
 | [`canon/flawless-method.md`](./canon/flawless-method.md) | The Flawless method: how decisions are made |
+| [`canon/flawless-writing.md`](./canon/flawless-writing.md) | The Flawless writing standard: dimensions, exit criteria, tone by file type |
 
 ## Principle
 
