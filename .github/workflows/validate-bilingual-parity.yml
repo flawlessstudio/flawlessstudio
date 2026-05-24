@@ -37,46 +37,42 @@ jobs:
       - name: Check bilingual parity
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
           FAIL=0
 
-          check_parity() {
+          check_dir() {
             local dir="$1"
-            local pattern="$2"
-            echo "Checking parity in: $dir"
-            find "$dir" -maxdepth 1 -name "$pattern" ! -name "*.es.md" | while read EN_FILE; do
+            local excludes=("*.es.md" "README.md")
+
+            mapfile -t EN_FILES < <(
+              find "$dir" -maxdepth 1 -name '*.md' \
+                ! -name '*.es.md' \
+                ! -name 'README.md'
+            )
+
+            for EN_FILE in "${EN_FILES[@]}"; do
               ES_FILE="${EN_FILE%.md}.es.md"
               if [ ! -f "$ES_FILE" ]; then
-                echo "MISSING ES pair: $ES_FILE"
+                echo "::error file=$EN_FILE::Missing ES pair: $ES_FILE"
                 FAIL=1
               fi
             done
           }
 
-          # canon/ — all docs except README
-          find canon -maxdepth 1 -name '*.md' ! -name '*.es.md' ! -name 'README.md' | while read EN_FILE; do
-            ES_FILE="${EN_FILE%.md}.es.md"
-            if [ ! -f "$ES_FILE" ]; then
-              echo "::error file=$EN_FILE::Missing ES pair: $ES_FILE"
-              exit 1
-            fi
-          done
-
-          # docs/decisions/ — all docs except README
-          find docs/decisions -maxdepth 1 -name '*.md' ! -name '*.es.md' ! -name 'README.md' | while read EN_FILE; do
-            ES_FILE="${EN_FILE%.md}.es.md"
-            if [ ! -f "$ES_FILE" ]; then
-              echo "::error file=$EN_FILE::Missing ES pair: $ES_FILE"
-              exit 1
-            fi
-          done
+          check_dir "canon"
+          check_dir "docs/decisions"
 
           # Root canonical files
           for FILE in CANON GOVERNANCE SECURITY SUPPORT CODE_OF_CONDUCT CHANGELOG REPO_INDEX; do
             if [ -f "${FILE}.md" ] && [ ! -f "${FILE}.es.md" ]; then
               echo "::error file=${FILE}.md::Missing ES pair: ${FILE}.es.md"
-              exit 1
+              FAIL=1
             fi
           done
+
+          if [ "$FAIL" -ne 0 ]; then
+            echo "Bilingual parity check FAILED."
+            exit 1
+          fi
 
           echo "Bilingual parity check passed."
