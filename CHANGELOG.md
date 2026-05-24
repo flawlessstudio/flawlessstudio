@@ -5,6 +5,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [0.3.0] — 2026-05-24
+
+### Added
+- `canon/flawless-terminology.md` + `.es.md` — canonical glossary of all Flawless terms (restored; was listed in v0.1.0 but absent from repo)
+- `MIGRATION_LOG.md` + `.es.md` — structured log of structural migrations
+
+### Fixed
+- `canon/flawless-framework.md`: replaced broken `agent-contracts.md` reference with `docs/reference/` pending note
+- `.github/workflows/validate-bilingual-parity.yml`: removed dead `check_parity()` function; fixed subshell exit propagation using `mapfile` pattern
+- `.github/workflows/audit-report.yml`: added `ensure-label` step to guard against missing `audit` label
+
+---
+
 ## [0.2.0] — 2026-05-24
 
 ### Added
@@ -48,5 +61,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+[0.3.0]: https://github.com/flawlessstudio/flawlessstudio/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/flawlessstudio/flawlessstudio/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/flawlessstudio/flawlessstudio/releases/tag/v0.1.0

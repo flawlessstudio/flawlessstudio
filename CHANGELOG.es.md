@@ -1,7 +1,20 @@
 # Registro de cambios
 
-Todos los cambios relevantes en este repositorio se documentan aquí.
-Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+Todos los cambios notables en este repositorio están documentados aquí.
+El formato sigue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+---
+
+## [0.3.0] — 2026-05-24
+
+### Añadido
+- `canon/flawless-terminology.md` + `.es.md` — glosario canónico de todos los términos Flawless (restaurado; figuraba en v0.1.0 pero ausente del repositorio)
+- `MIGRATION_LOG.md` + `.es.md` — registro estructurado de migraciones estructurales
+
+### Corregido
+- `canon/flawless-framework.md`: referencia rota a `agent-contracts.md` reemplazada por nota pendiente en `docs/reference/`
+- `.github/workflows/validate-bilingual-parity.yml`: función muerta `check_parity()` eliminada; propagación de salida de subshell corregida con patrón `mapfile`
+- `.github/workflows/audit-report.yml`: paso `ensure-label` añadido para proteger contra la ausencia del label `audit`
 
 ---
 
@@ -12,8 +25,8 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `SECURITY.md` + `.es.md` — política de seguridad
 - `CHANGELOG.md` + `.es.md` — este archivo
 - `SUPPORT.md` + `.es.md` — guía de soporte
-- `CODE_OF_CONDUCT.md` + `.es.md` — código de conducta
-- `.github/PULL_REQUEST_TEMPLATE.md` + `.es.md` — plantilla estructurada de PR
+- `CODE_OF_CONDUCT.md` + `.es.md` — código de conducta del contribuidor
+- `.github/PULL_REQUEST_TEMPLATE.md` + `.es.md` — plantilla de PR estructurada
 - `.github/ISSUE_TEMPLATE/bug.yml`, `canon-revision.yml`, `improvement.yml`, `config.yml`
 - `docs/decisions/ADR-0001-canonical-structure.md` + `.es.md`
 - `docs/decisions/README.md` + `.es.md`
@@ -23,15 +36,15 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `registries/voice-ai/recipes/README.md` + `.es.md`
 
 ### Corregido
-- `GOVERNANCE.md`: eliminada referencia rota a `agent-contracts.md`; documentada consecuencia de push directo a `main`
-- `CANON.md`: añadida columna Status; añadida instrucción de acción post-lectura
-- `SECURITY.md`: alcance ampliado a todo el ecosistema; sección fuera de alcance expandida
-- `SUPPORT.md`: añadida línea de criterio de éxito
-- `CODE_OF_CONDUCT.md`: eliminada regla de proceso (movida a `CONTRIBUTING.md`)
-- `REPO_INDEX.md` + `.es.md`: clarificado como referencia rápida; enlace a `ecosystem/repo-index`
+- `GOVERNANCE.md`: referencia rota a `agent-contracts.md` eliminada; consecuencia de push-to-main documentada
+- `CANON.md`: columna Status añadida; instrucción de acción post-lectura añadida
+- `SECURITY.md`: alcance ampliado al ecosistema completo; sección fuera de alcance ampliada
+- `SUPPORT.md`: línea de criterio de éxito añadida
+- `CODE_OF_CONDUCT.md`: regla de proceso eliminada (movida a `CONTRIBUTING.md`)
+- `REPO_INDEX.md` + `.es.md`: clarificado como referencia rápida; enlace a `ecosystem/repo-index` añadido
 - `ecosystem/map.md`: enlace ADR roto corregido; entrada duplicada `RAG-Anything` eliminada
-- `ecosystem/repo-index.md` + `.es.md`: añadida columna Visibility; añadida nota de alcance
-- `docs/decisions/README.md` + `.es.md`: añadida tabla de índice de ADRs
+- `ecosystem/repo-index.md` + `.es.md`: columna Visibility añadida; nota de alcance añadida
+- `docs/decisions/README.md` + `.es.md`: tabla de índice ADR añadida
 
 ---
 
@@ -48,5 +61,6 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+[0.3.0]: https://github.com/flawlessstudio/flawlessstudio/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/flawlessstudio/flawlessstudio/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/flawlessstudio/flawlessstudio/releases/tag/v0.1.0
