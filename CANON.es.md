@@ -9,6 +9,7 @@
 | [`canon/flawless-framework.es.md`](./canon/flawless-framework.es.md) | El marco operativo central de Flawless |
 | [`canon/flawless-terminology.es.md`](./canon/flawless-terminology.es.md) | Glosario canónico de todos los términos Flawless |
 | [`canon/flawless-method.es.md`](./canon/flawless-method.es.md) | El método Flawless: cómo se toman las decisiones |
+| [`canon/flawless-writing.es.md`](./canon/flawless-writing.es.md) | El estándar de escritura Flawless: dimensiones, criterios de salida, tono por tipo de archivo |
 
 ## Principio
 
