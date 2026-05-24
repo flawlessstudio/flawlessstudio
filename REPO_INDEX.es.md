@@ -33,8 +33,20 @@
 | [`flawless-agents`](https://github.com/flawlessstudio/flawless-agents) | Sistema de agentes IA | Activo |
 | [`repo-analyst-mvp`](https://github.com/flawlessstudio/repo-analyst-mvp) | Herramienta de análisis de repositorios | Activo |
 
+## Archivos Operativos
+
+| Archivo | Propósito |
+|---|---|
+| [`CANON.md`](./CANON.es.md) | Índice de todos los documentos canónicos |
+| [`GOVERNANCE.md`](./GOVERNANCE.es.md) | Reglas de contribución y política de merge |
+| [`CHANGELOG.md`](./CHANGELOG.es.md) | Todos los cambios notables por versión |
+| [`MIGRATION_LOG.md`](./MIGRATION_LOG.es.md) | Migraciones estructurales — qué se movió, por qué y qué se rompió |
+| [`SECURITY.md`](./SECURITY.es.md) | Política de seguridad e informe de vulnerabilidades |
+| [`SUPPORT.md`](./SUPPORT.es.md) | Canales de soporte y política de respuesta |
+| [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.es.md) | Estándares del contribuidor |
+
 ---
 
 _Detalle completo: [`ecosystem/repo-index.es.md`](./ecosystem/repo-index.es.md) · Mapa visual: [`ecosystem/map.es.md`](./ecosystem/map.es.md)_
 
-_Última revisión: Mayo 2026_
+_Última revisión: 2026-05-24_
