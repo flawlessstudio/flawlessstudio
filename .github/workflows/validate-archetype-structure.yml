@@ -1,0 +1,63 @@
+name: Validate Archetype Structure
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/archetypes/**.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/archetypes/**.md'
+
+jobs:
+  structure-check:
+    name: Check archetype required sections
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate archetype structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          FAIL=0
+
+          REQUIRED_SECTIONS=(
+            "## Identity"
+            "## Scope"
+            "## Exclusions"
+            "## Phase Structure"
+            "## Quality Controls"
+            "## Validation Gates"
+            "## Resilience"
+            "## International Validity"
+            "## Lock Condition"
+          )
+
+          # Only validate archetype_NN_*.md files, skip README and index files
+          mapfile -t ARCHETYPE_FILES < <(
+            find docs/archetypes -maxdepth 1 -name 'archetype_*.md' ! -name '*.es.md'
+          )
+
+          if [ ${#ARCHETYPE_FILES[@]} -eq 0 ]; then
+            echo "No archetype files found in docs/archetypes/ — skipping."
+            exit 0
+          fi
+
+          for FILE in "${ARCHETYPE_FILES[@]}"; do
+            for SECTION in "${REQUIRED_SECTIONS[@]}"; do
+              if ! grep -qF "$SECTION" "$FILE"; then
+                echo "::error file=$FILE::Missing required section: '$SECTION'"
+                FAIL=1
+              fi
+            done
+          done
+
+          if [ "$FAIL" -ne 0 ]; then
+            echo "Archetype structure validation FAILED."
+            exit 1
+          fi
+
+          echo "All ${#ARCHETYPE_FILES[@]} archetype files passed structure validation."
