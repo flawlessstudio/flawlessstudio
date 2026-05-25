@@ -71,6 +71,8 @@ jobs:
                 '- [ ] `registries/voice-ai/registry.watchlist.yaml` promotions reviewed',
                 '- [ ] `CHANGELOG.md` up to date',
                 '- [ ] `docs/decisions/README.md` index reflects all ADRs',
+                '- [ ] `docs/archetypes/` — all 20 archetypes reviewed for accuracy and completeness',
+                '- [ ] `docs/archetypes/README.md` index matches current archetype files',
                 '- [ ] No broken links in root canonical files',
                 '',
                 '## Output',
