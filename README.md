@@ -12,6 +12,8 @@
 <p align="center">
   <a href="https://github.com/flawlessstudio/flawless-ecosystem"><strong>Ecosystem map</strong></a>
   ·
+  <a href="./offers/ai-product-systems-audit-sprint.md"><strong>Commercial offer</strong></a>
+  ·
   <a href="mailto:oneflawlessstudio@gmail.com"><strong>Contact</strong></a>
 </p>
 
@@ -25,6 +27,18 @@
 | Operating systems | [`inui-os`](https://github.com/flawlessstudio/inui-os) · [`fdis-os`](https://github.com/flawlessstudio/fdis-os) · [`flawless-northstar-os`](https://github.com/flawlessstudio/flawless-northstar-os) |
 | Quality frameworks | [`universal-software-quality-system`](https://github.com/flawlessstudio/universal-software-quality-system) · [`flawless-filters`](https://github.com/flawlessstudio/flawless-filters) |
 | Tools and agents | [`flawless-engine`](https://github.com/flawlessstudio/flawless-engine) · [`flawless-agents`](https://github.com/flawlessstudio/flawless-agents) · [`repo-analyst-mvp`](https://github.com/flawlessstudio/repo-analyst-mvp) |
+
+## Commercial offer
+
+### AI Product & Systems Audit Sprint
+
+A bounded diagnostic and decision sprint for founders and teams building AI-enabled products, agentic workflows, design systems or operational platforms.
+
+The engagement produces an explicit baseline, system map, evidence-led audit, priority decisions, minimum credible architecture and implementation-ready roadmap.
+
+[Read the complete offer](./offers/ai-product-systems-audit-sprint.md)
+
+Commercial terms and delivery conditions are agreed before kickoff.
 
 ## Stack
 
@@ -49,5 +63,5 @@
 ---
 
 <p align="center">
-  Open to collaboration on design systems, AI agent architectures, document intelligence, and quality frameworks.
+  Open to collaboration on design systems, AI agent architectures, document intelligence, quality frameworks and product-system audits.
 </p>
