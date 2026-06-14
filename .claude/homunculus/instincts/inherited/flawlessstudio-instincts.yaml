@@ -1,0 +1,340 @@
+# Instincts generated from https://github.com/flawlessstudio/flawlessstudio
+# Generated: 2026-06-14T06:13:14.186Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: flawlessstudio-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat, docs, test, ci
+
+## Evidence
+
+- 5 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat(offer): add AI product and systems audit sprint, docs(offer): add offer index
+
+---
+id: flawlessstudio-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Commit Length
+
+## Action
+
+Keep commit messages concise (~45 characters)
+
+## Evidence
+
+- Average commit message length: 45 chars
+- Based on 5 commits
+
+---
+id: flawlessstudio-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: flawlessstudio-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: flawlessstudio-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: flawlessstudio-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: flawlessstudio-instinct-file-naming
+trigger: "When creating a new Python file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: flawlessstudio-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: flawlessstudio-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: flawlessstudio-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: flawlessstudio-instinct-import-style
+trigger: "When importing modules in Python files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: flawlessstudio-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: flawlessstudio-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Test Location
+
+## Action
+
+Place test files in a separate location from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: flawlessstudio-instinct-test-naming
+trigger: "When naming a test file"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Test Naming
+
+## Action
+
+Use camelCase for the test file name
+
+## Evidence
+
+- Pattern in namingConventions.files
+- test(offer): add dependency-free publication validator
+
+---
+id: flawlessstudio-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Commit Format
+
+## Action
+
+Use conventional commits with prefix (feat, docs, test, ci), optional scope in parentheses, colon, and a brief description
+
+## Evidence
+
+- feat(offer): add AI product and systems audit sprint
+- docs(offer): add offer index
+- test(offer): add dependency-free publication validator
+- ci(offer): validate commercial offer publication
+
+---
+id: flawlessstudio-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Commit Length
+
+## Action
+
+Keep the commit message around 45 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: flawlessstudio-instinct-ci-workflow
+trigger: "When updating or adding CI for commercial offer publication"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: flawlessstudio/flawlessstudio
+---
+
+# Flawlessstudio Instinct Ci Workflow
+
+## Action
+
+Use the workflow defined in .github/workflows/validate-commercial-offer.yml
+
+## Evidence
+
+- .github/workflows/validate-commercial-offer.yml
+
