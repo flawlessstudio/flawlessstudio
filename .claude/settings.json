@@ -6,9 +6,16 @@
                 "source": "github",
                 "repo": "flawlessstudio/.github"
             }
+        },
+        "multica-ai": {
+            "source": {
+                "source": "github",
+                "repo": "multica-ai/andrej-karpathy-skills"
+            }
         }
     },
     "enabledPlugins": {
-        "andrej-karpathy-skills@flawlessstudio": true
+        "andrej-karpathy-skills@flawlessstudio": true,
+        "andrej-karpathy-skills@multica-ai": true
     }
 }
