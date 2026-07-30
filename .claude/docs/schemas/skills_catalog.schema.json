@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/flawlessstudio/.github/blob/main/.claude/docs/schemas/skills_catalog.schema.json",
+  "title": "SkillsCatalog",
+  "description": "Published skills catalog — only includes nodes with is_published=true and status=DONE",
+  "type": "object",
+  "required": ["run_id", "schema_version", "generated_at", "skills"],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "2.0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "author", "plugin_slug", "skill_slug", "name", "description", "license"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$"
+          },
+          "author": { "type": "string" },
+          "author_type": { "type": "string", "enum": ["User", "Organization"] },
+          "plugin_slug": { "type": "string" },
+          "skill_slug": { "type": "string" },
+          "name": { "type": "string" },
+          "display_name": { "type": "string" },
+          "description": { "type": "string" },
+          "version": { "type": "string" },
+          "license": { "type": "string" },
+          "homepage": { "type": "string", "format": "uri" },
+          "repository": { "type": "string", "format": "uri" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "disable_model_invocation": { "type": "boolean" },
+          "required_env_vars": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "ecosystems": {
+            "type": "object",
+            "properties": {
+              "cursor": { "type": "boolean" },
+              "codex": { "type": "boolean" },
+              "kimi": { "type": "boolean" },
+              "gemini": { "type": "boolean" },
+              "claude": { "type": "boolean" }
+            }
+          },
+          "completeness_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "marketplace_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL on claudemarketplaces.com"
+          },
+          "install_command": {
+            "type": "string",
+            "description": "Claude Code install command"
+          }
+        }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "by_license": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        },
+        "by_author": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        },
+        "by_category": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        },
+        "avg_completeness": { "type": "number" },
+        "with_disable_model_invocation": { "type": "integer" },
+        "multi_ecosystem_count": { "type": "integer" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

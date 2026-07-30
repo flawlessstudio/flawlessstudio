@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/flawlessstudio/.github/blob/main/.claude/docs/schemas/node.schema.json",
+  "title": "EcosystemNode",
+  "description": "A single skill or MCP node in the Claude ecosystem mapping graph",
+  "type": "object",
+  "required": ["id", "run_id", "schema_version", "author", "plugin_slug", "skill_slug", "status", "fetched_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical node identifier: {author}/{plugin_slug}/{skill_slug}",
+      "pattern": "^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$"
+    },
+    "run_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID of the crawl run that created this node"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "2.0",
+      "description": "Schema version"
+    },
+    "author": {
+      "type": "string",
+      "description": "GitHub login of the skill author (user or org)",
+      "minLength": 1
+    },
+    "plugin_slug": {
+      "type": "string",
+      "description": "GitHub repository name / plugin identifier",
+      "minLength": 1
+    },
+    "skill_slug": {
+      "type": "string",
+      "description": "Skill directory name within the plugin",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "description": "Skill name from SKILL.md frontmatter"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable display name (may differ from slug)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of what the skill does"
+    },
+    "version": {
+      "type": "string",
+      "description": "Skill version (semver preferred)"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier",
+      "examples": ["MIT", "Apache-2.0", "GPL-3.0", "BSD-3-Clause", "agpl-3.0"]
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the skill's homepage or documentation"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the GitHub repository"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Taxonomy tags"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Category classification"
+    },
+    "disable_model_invocation": {
+      "type": "boolean",
+      "description": "If true, this skill disables the AI model from being called during execution",
+      "default": false
+    },
+    "server_type": {
+      "type": "string",
+      "enum": ["stdio", "http", "websocket"],
+      "description": "MCP server transport type (MCP nodes only)"
+    },
+    "required_env_vars": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Environment variables required by this skill/MCP"
+    },
+    "ecosystems": {
+      "type": "object",
+      "description": "Cross-ecosystem support flags",
+      "properties": {
+        "cursor": { "type": "boolean" },
+        "codex": { "type": "boolean" },
+        "kimi": { "type": "boolean" },
+        "gemini": { "type": "boolean" },
+        "claude": { "type": "boolean" }
+      }
+    },
+    "has_mcp": {
+      "type": "boolean",
+      "description": "Whether the repo contains MCP server configuration",
+      "default": false
+    },
+    "completeness_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "0-1 completeness score: 0.7 weight on required fields, 0.3 on optional"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Data confidence level",
+      "default": "high"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING", "IN_PROGRESS", "DONE", "BLOCKED", "ERROR"],
+      "description": "Processing status"
+    },
+    "node_type": {
+      "type": "string",
+      "enum": ["skill", "mcp", "plugin"],
+      "description": "Type of node"
+    },
+    "is_published": {
+      "type": "boolean",
+      "description": "Whether the skill appears on claudemarketplaces.com"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["marketplace", "github_raw", "github_api", "wayback", "inferred"],
+      "description": "Primary data source for this node"
+    },
+    "validation_errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "message"],
+        "properties": {
+          "field": { "type": "string" },
+          "message": { "type": "string" },
+          "value": {}
+        }
+      },
+      "description": "Schema validation errors"
+    },
+    "conflict_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "source_a", "value_a", "source_b", "value_b", "resolution"],
+        "properties": {
+          "field": { "type": "string" },
+          "source_a": { "type": "string" },
+          "value_a": {},
+          "source_b": { "type": "string" },
+          "value_b": {},
+          "resolution": { "type": "string" },
+          "kept_value": {}
+        }
+      },
+      "description": "Conflict Resolution Protocol decisions"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when this node was last fetched"
+    },
+    "branch": {
+      "type": "string",
+      "description": "Resolved default branch (main/master/etc)"
+    },
+    "skill_md_path": {
+      "type": "string",
+      "description": "Relative path to SKILL.md within the repo"
+    },
+    "raw_frontmatter": {
+      "type": "object",
+      "description": "All frontmatter fields as parsed (including non-standard extensions)",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
