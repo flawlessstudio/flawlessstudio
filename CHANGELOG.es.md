@@ -5,6 +5,18 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [0.4.0] — 2026-08-15
+
+### Añadido
+- `docs/reference/agentic-ai-repo-map-prompt.md` + `.es.md` — prompt maestro canónico para generar el mapa de repos agénticos (20 bloques, 10 criterios de convergencia)
+- `docs/reference/agentic-ai-repo-map.md` + `.es.md` — mapa definitivo de repos externos: 120+ repos, 20 bloques, ecosistema completo de Agentic AI, convergencia 10/10
+
+### Actualizado
+- `ecosystem/map.md` + `.es.md` — sección Mapas de Inteligencia con enlace al mapa agéntico
+- `CANON.md` + `.es.md` — sección Mapas de Inteligencia añadida
+
+---
+
 ## [0.3.0] — 2026-05-24
 
 ### Añadido
