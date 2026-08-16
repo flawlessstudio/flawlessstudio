@@ -5,6 +5,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [0.4.0] — 2026-08-15
+
+### Added
+- `docs/reference/agentic-ai-repo-map-prompt.md` + `.es.md` — canonical master prompt for generating the Agentic AI repo map (20 blocks, 10 convergence criteria)
+- `docs/reference/agentic-ai-repo-map.md` + `.es.md` — definitive external repo map: 120+ repos, 20 blocks, full Agentic AI ecosystem, convergence 10/10
+
+### Updated
+- `ecosystem/map.md` + `.es.md` — added Intelligence Maps section linking to agentic-ai-repo-map
+- `CANON.md` + `.es.md` — added Intelligence Maps section
+
+---
+
 ## [0.3.0] — 2026-05-24
 
 ### Added

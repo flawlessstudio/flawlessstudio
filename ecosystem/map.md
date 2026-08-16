@@ -83,6 +83,16 @@ Repos that build the studio's core systems and design language.
 
 ---
 
+## Intelligence Maps & Reference
+
+Extended reference maps covering the external ecosystem — indexed by domain, validated by community adoption.
+
+| Document | Scope | Repos |
+|---|---|---|
+| [`docs/reference/agentic-ai-repo-map.md`](../docs/reference/agentic-ai-repo-map.md) | AI Agents & Agentic AI — full external ecosystem | 120+ |
+
+---
+
 ## Canonical standards applied
 
 All APEX and Agent Layer repos follow the **Flawless canonical bilingual tree**:

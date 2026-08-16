@@ -43,4 +43,14 @@ Repos que definen cómo el estudio piensa, trabaja y construye.
 
 ---
 
+## Mapas de Inteligencia & Referencia
+
+Mapas de referencia extendidos que cubren el ecosistema externo, indexados por dominio y validados por adopción comunitaria.
+
+| Documento | Alcance | Repos |
+|---|---|---|
+| [`docs/reference/agentic-ai-repo-map.md`](../docs/reference/agentic-ai-repo-map.md) | AI Agents y Agentic AI — ecosistema externo completo | 120+ |
+
+---
+
 *Parte del ecosistema [Flawless Studio](https://github.com/flawlessstudio).*
