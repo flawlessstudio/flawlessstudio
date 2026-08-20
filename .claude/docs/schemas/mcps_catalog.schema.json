@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/flawlessstudio/.github/blob/main/.claude/docs/schemas/mcps_catalog.schema.json",
+  "title": "MCPsCatalog",
+  "description": "MCP servers catalog with full tool definitions and input schemas",
+  "type": "object",
+  "required": ["run_id", "schema_version", "generated_at", "servers"],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "2.0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "servers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "author", "source_repo", "server_type"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Canonical ID: {author}/{repo}/{server_name}"
+          },
+          "name": {
+            "type": "string",
+            "description": "MCP server name"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string",
+            "description": "GitHub login"
+          },
+          "source_repo": {
+            "type": "string",
+            "description": "GitHub repo in {owner}/{repo} format"
+          },
+          "source_file": {
+            "type": "string",
+            "description": "Config file path within repo",
+            "examples": [".mcp.json", "mcp.json", ".mcprc"]
+          },
+          "server_type": {
+            "type": "string",
+            "enum": ["stdio", "http", "websocket"],
+            "description": "Transport protocol"
+          },
+          "command": {
+            "type": "string",
+            "description": "Command to launch the server (stdio type)"
+          },
+          "args": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Command arguments"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Server URL (http/websocket types)"
+          },
+          "env": {
+            "type": "object",
+            "additionalProperties": { "type": "string" },
+            "description": "Environment variable defaults/templates"
+          },
+          "required_env_vars": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Environment variables that must be set"
+          },
+          "requires_config": {
+            "type": "boolean",
+            "description": "True if required_env_vars is non-empty"
+          },
+          "license": {
+            "type": "string",
+            "description": "SPDX license identifier"
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "input_schema": {
+                  "type": "object",
+                  "description": "JSON Schema for the tool's input parameters"
+                }
+              }
+            },
+            "description": "MCP tools exposed by this server"
+          },
+          "tool_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "is_published": {
+            "type": "boolean",
+            "description": "Whether listed on claudemarketplaces.com"
+          },
+          "completeness_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "fetched_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "by_server_type": {
+          "type": "object",
+          "properties": {
+            "stdio": { "type": "integer" },
+            "http": { "type": "integer" },
+            "websocket": { "type": "integer" }
+          }
+        },
+        "total_tools": { "type": "integer" },
+        "avg_tools_per_server": { "type": "number" },
+        "requiring_config": { "type": "integer" },
+        "by_author": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
